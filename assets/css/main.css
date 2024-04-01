@@ -12,14 +12,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 88px;
+    padding: 0 3rem;
 }
 
 .header__navbar-logo img {
     width: 100px;
 }
 
+.header__navbar-wrapper {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 .header__navbar-list {
-    list-style: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .header__navbar-item {
@@ -790,8 +801,12 @@ footer {
 .mobile-menu {
     display: none;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
+}
+
+.mobile-menu > .ti-menu-close{
+    display: block;
 }
 
 .mobile-menu:hover {
@@ -800,4 +815,16 @@ footer {
 
 .mobile-menu:hover .ti-menu {
     color: white;
+}
+
+.nav--open {
+    transform: translate(0)!important;
+}
+
+.btn--hide {
+    display: none !important ;
+}
+
+.btn--show {
+    display: block;
 }
