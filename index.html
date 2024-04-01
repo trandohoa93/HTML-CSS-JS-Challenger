@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <a class="header__navbar-logo" href="/">
+                        <img src="./assets/img/logo.png" alt="Logo">
+                    </a>
+                    <div id="mobile-menu" class="mobile-menu">
+                        <i class="fa-solid fa-bars ti-menu"></i>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/home">
+                                Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/page">
+                                Page
+                                <i class="fa-solid fa-chevron-down"></i>    
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/course">
+                                Course
+                                <i class="fa-solid fa-chevron-down"></i>   
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/feature">
+                                Feature
+                                <i class="fa-solid fa-chevron-down"></i>    
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/blog">
+                                Blog
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-link" href="/shop">
+                                Shop
+                                <i class="fa-solid fa-chevron-down"></i>   
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-button-link" href="/search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-button-link" href="/cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="btn" href="/register">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div class="slider slide">
+                <div class="slider__content">
+                    <div class="slider__content-title">
+                        <span>Learn new skills</span>
+                        <span>online with</span>
+                        <span>top educators</span>
+                    </div>
+                    <div class="slider__content-subtitle">
+                        <span>Choose from over 100,000 online video</span>
+                        <span>courses with new additions published every month.</span>
+                    </div>
+                    <form class="slider__search" action="">
+                        <label for="course_search" class="sr-only">Search your favorite course</label>
+                        <input type="text" id="course_search" placeholder="Search your favorite course" name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="slider__image">
+                    <img src="./assets/img/slider-girl.png" alt="Slide">
+                </div>
+            </div>
+            <div class="category grid">
+                <div class="category__title">
+                    <div class="category__title-text">
+                        <p>Choice favourite course form top category</p>
+                    </div>
+                    <div class="category__button">
+                        <a class="btn" href="/categories">
+                            <span>See all category</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="category__item">
+                    <div class="category__icon icon_design">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <p>Design</p>
+                    </div>
+                    <div class="category__icon icon_dev">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p>Development</p>
+                    </div>
+                    <div class="category__icon icon_it">
+                        <i class="fa-solid fa-gears"></i>
+                        <p>IT&Software</p>
+                    </div>
+                    <div class="category__icon icon_bus">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <p>Business</p>
+                    </div>
+                    <div class="category__icon icon_marketing">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <p>Marketing</p>
+                    </div>
+                    <div class="category__icon icon_photograp">
+                        <i class="fa-solid fa-camera"></i>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course__wrapper grid">
+                    <div class="course__title">
+                        <div class="course__title-text">
+                            <p>Choice favourite course form top category</p>
+                        </div>
+                        <div class="course__button">
+                            <a class="course__button-link">
+                                <span>Design</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a class="btn" href="/category">
+                                <span>View all</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course__item">
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__box">
+                            <img src="./assets/img/course-image.png" alt="Course image">
+                            <div class="course__interact">
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>4.5 (120)</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>28.500</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>36 Lesion</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="course__text">
+                                <div class="course__title">
+                                    Everything You Need to Know About Business
+                                </div>
+                                <div class="course__subtitle">
+                                    <div class="course__author">
+                                        <img src="./assets/img/course-author.jpg" alt="Author image">
+                                        <p>Nicole Hoa</p>
+                                    </div>
+                                    <div class="course__price">
+                                        <p class="course__price-dis">$99.99</p>
+                                        <P class="course__price-normal">$49.65</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__wrapper grid">
+                    <div class="about__title">
+                        <p>We will help you learn what you are passionates about</p>
+                    </div>
+                    <div class="about__item">
+                        <div class="about-grid__container">
+                            <div class="about-grid__item about-grid__item--0">
+                                <img src="./assets/img/about-image0.jpg" alt="About image">
+                            </div>
+                            <div class="about-grid__item about-grid__item--1">
+                                <img src="./assets/img/about-image1.jpg" alt="About image">
+                            </div>
+                            <div class="about-grid__item about-grid__item--2">
+                                <img src="./assets/img/about-image2.jpg" alt="About image">
+                            </div>
+                        </div>
+                        <div class="about-step">
+                            <div class="about-step__item grid-container">
+                                    <p class="about-step__number grid-item">01.</p>
+                                    <p class="about-step__title grid-item">Go at your own page</p>
+                                    <p class="grid-item"></p>
+                                    <p class="about-step__subtitle grid-item">Find what you are interested to learn online and choose what exactly best for you that really passionate to learn and get to study about it</p>
+                            </div>
+                            <div class="about-step__item grid-container">
+                                <p class="about-step__number grid-item">02.</p>
+                                <p class="about-step__title grid-item">Learn from industry experts</p>
+                                <p class="grid-item"></p>
+                                <p class="about-step__subtitle grid-item">Find what you are interested to learn online and choose what exactly best for you that really passionate to learn and get to study about it</p>
+                            </div>
+                        <div class="about-step__item grid-container">
+                            <p class="about-step__number grid-item">03.</p>
+                            <p class="about-step__title grid-item">Find video course on almost any topic</p>
+                            <p class="grid-item"></p>
+                            <p class="about-step__subtitle grid-item">Find what you are interested to learn online and choose what exactly best for you that really passionate to learn and get to study about it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="course">
+                <div class="course__wrapper grid">
+                    <div class="course__title">
+                        <div class="course__title-text">
+                            <p>The world's largest selection of courses</p>
+                        </div>
+                        <div class="course__button">
+                            <a class="course__button-link">
+                                <span>Design</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a class="btn" href="#">
+                                <span>View all</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course__item2 swiper-wrapper">
+                            <div class="course__box swiper-slide">
+                                <img src="./assets/img/course-image.png" alt="Course image">
+                                <div class="course__interact">
+                                    <div>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>4.5 (120)</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>28.500</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>36 Lesion</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course__text">
+                                    <div class="course__title">
+                                        Everything You Need to Know About Business
+                                    </div>
+                                    <div class="course__subtitle">
+                                        <div class="course__author">
+                                            <img src="./assets/img/course-author.jpg" alt="">
+                                            <p>Nicole Hoa</p>
+                                        </div>
+                                        <div class="course__price">
+                                            <p class="course__price-dis">$99.99</p>
+                                            <P class="course__price-normal">$49.65</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course__box swiper-slide">
+                                <img src="./assets/img/course-image.png" alt="Course image">
+                                <div class="course__interact">
+                                    <div>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>4.5 (120)</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>28.500</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>36 Lesion</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course__text">
+                                    <div class="course__title">
+                                        Everything You Need to Know About Business
+                                    </div>
+                                    <div class="course__subtitle">
+                                        <div class="course__author">
+                                            <img src="./assets/img/course-author.jpg" alt="Author image">
+                                            <p>Nicole Hoa</p>
+                                        </div>
+                                        <div class="course__price">
+                                            <p class="course__price-dis">$99.99</p>
+                                            <P class="course__price-normal">$49.65</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course__box swiper-slide">
+                                <img src="./assets/img/course-image.png" alt="Course image">
+                                <div class="course__interact">
+                                    <div>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>4.5 (120)</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>28.500</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>36 Lesion</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course__text">
+                                    <div class="course__title">
+                                        Everything You Need to Know About Business
+                                    </div>
+                                    <div class="course__subtitle">
+                                        <div class="course__author">
+                                            <img src="./assets/img/course-author.jpg" alt="Author image">
+                                            <p>Nicole Hoa</p>
+                                        </div>
+                                        <div class="course__price">
+                                            <p class="course__price-dis">$99.99</p>
+                                            <P class="course__price-normal">$49.65</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course__box swiper-slide">
+                                <img src="./assets/img/course-image.png" alt="Course image">
+                                <div class="course__interact">
+                                    <div>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>4.5 (120)</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>28.500</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>36 Lesion</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course__text">
+                                    <div class="course__title">
+                                        Everything You Need to Know About Business
+                                    </div>
+                                    <div class="course__subtitle">
+                                        <div class="course__author">
+                                            <img src="./assets/img/course-author.jpg" alt="Author image">
+                                            <p>Nicole Hoa</p>
+                                        </div>
+                                        <div class="course__price">
+                                            <p class="course__price-dis">$99.99</p>
+                                            <P class="course__price-normal">$49.65</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course__box swiper-slide">
+                                <img src="./assets/img/course-image.png" alt="Course image">
+                                <div class="course__interact">
+                                    <div>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>4.5 (120)</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>28.500</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>36 Lesion</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course__text">
+                                    <div class="course__title">
+                                        Everything You Need to Know About Business
+                                    </div>
+                                    <div class="course__subtitle">
+                                        <div class="course__author">
+                                            <img src="./assets/img/course-author.jpg" alt="Author image">
+                                            <p>Nicole Hoa</p>
+                                        </div>
+                                        <div class="course__price">
+                                            <p class="course__price-dis">$99.99</p>
+                                            <P class="course__price-normal">$49.65</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__btn">
+                        <button class="prevBtn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="nextBtn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="start">
+                <div class="start--wrapper grid">
+                    <p class="start__title">It's time to start investing in your seft learning</p>
+                    <p class="start__subtitle">Match your goals to our programs, explore your options, and map out your patch to success. Ipan to use skillfy for a long time!.</p>
+                    <a class="btn" href="#">
+                        <span>Get Started</span>
+                    </a>
+                </div>
+            </div>
+            <div class="quotes">
+               <div class="quotes__wrapper grid">
+                    <div class="quotes__title">
+                        <p>What our students have to say</p>
+                        <div class="quotes__btn">
+                            <button class="prevBtn">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="nextBtn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quotes-container">
+                        <div class="quotes__item swiper-wrapper">
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-student.jpg" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-student.jpg" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-student.jpg" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-student.jpg" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-student.jpg" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                            <div class="quotes__card swiper-slide">
+                                <div class="card__title">
+                                    <img src="./assets/img/quotes-stundent" alt="Student image">
+                                    <p>Rebecca Moore</p>
+                                </div>
+                                <div class="card__des">
+                                    <p>Skillfy is a life saver. I don't have the time money for ra college education. My goal is to become a freelance web designer and thanks to Skillfy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+            <div class="partners">
+                <div class="partners__wrapper grid">
+                    <div class="partners__title">
+                        <p>Trusted by our awesome partners</p>
+                        <div class="partners__btn">
+                            <button class="prevBtn">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="nextBtn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="partners-container">
+                        <div class="partners__logo swiper-wrapper">
+                            <img class="swiper-slide" src="./assets/img/partner-envato.svg" alt="Envato image">
+                            <img class="swiper-slide" src="./assets/img/partner-dribbble.svg" alt="Dribble image">
+                            <img class="swiper-slide" src="./assets/img/partner-behance.svg" alt="Behance image">
+                            <img class="swiper-slide" src="./assets/img/partner-slack.svg" alt="Slack image">
+                            <img class="swiper-slide" src="./assets/img/partner-udemy.svg" alt="Udemy image">
+                            <img class="swiper-slide" src="./assets/img/partner-google.svg" alt="Google image">
+                            <img class="swiper-slide" src="./assets/img/partner-envato.svg" alt="Envato image">
+                            <img class="swiper-slide" src="./assets/img/partner-dribbble.svg" alt="Dribble image">
+                            <img class="swiper-slide" src="./assets/img/partner-behance.svg" alt="Behance image">
+                            <img class="swiper-slide" src="./assets/img/partner-slack.svg" alt="Slack image">
+                            <img class="swiper-slide" src="./assets/img/partner-udemy.svg" alt="Udemy image">
+                            <img class="swiper-slide" src="./assets/img/partner-google.svg" alt="Google image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer__wrapper grid">
+                <div class="footer__mainnav">
+                    <div class="footer__navbox">
+                        <div class="footer__navbox-title">
+                            <p>Company</p>
+                        </div>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">About</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Press</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Affiliates</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navbox">
+                        <div class="footer__navbox-title">
+                            <p>Community</p>
+                        </div>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Go Premium</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Team Plans</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Gift Cards</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Refer a Friend</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Scholarships</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Free Clasess</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navbox">
+                        <div class="footer__navbox-title">
+                            <p>Teaching</p>
+                        </div>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Beacome a</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Teacher</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Teaching</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Academy</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Teacher</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Handbook</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navbox">
+                        <div class="footer__navbox-title">
+                            <p>Support</p>
+                        </div>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Support</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Concact Us</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">System Requirements</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Register Activation</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Key</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="#">Site feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__subnav">
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-text"><span></span>2015-2020 Skillfy Education Private Limited. All rights reserved.</p>
+                    </div>
+                    <div class="footer__icons">
+                        <div class="footer__icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="https://twitter.com">
+                                <i class="fa-brands fa-twitter" target="_blank"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="https://www.google.com">
+                                <i class="fa-brands fa-google" target="_blank"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script src="./app.js"></script>
+</body>
+</html>
