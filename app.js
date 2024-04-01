@@ -17,7 +17,11 @@ var swiper = new Swiper(".partners-container", {
       nextEl: ".partners__btn .nextBtn",
       prevEl: ".partners__btn .prevBtn",
   },
-  breakpoints: {  
+  breakpoints: {
+      375: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+    },  
       480: {
           slidesPerView: 3,
           spaceBetween: 40,
@@ -39,6 +43,10 @@ var swiper2 = new Swiper(".quotes-container", {
       prevEl: ".quotes__btn .prevBtn",
   },
   breakpoints: {  
+      375: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+      },
       480: {
           slidesPerView: 2,
           spaceBetween: 40,
@@ -64,7 +72,11 @@ var swiper3 = new Swiper(".course-container", {
       el: ".swiper-scrollbar",
       hide: false,
   },
-  breakpoints: {  
+  breakpoints: {
+      375: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+      },  
       480: {
           slidesPerView: 2,
           spaceBetween: 40,

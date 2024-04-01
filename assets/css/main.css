@@ -154,8 +154,11 @@
 }
 
 .category__item {
-    display: flex;
+    width: 100%;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
 }
 
 .category__icon {
@@ -163,7 +166,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 12%;
     padding: 15px 5px;
 }
 
