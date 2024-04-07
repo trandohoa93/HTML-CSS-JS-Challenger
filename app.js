@@ -72,6 +72,10 @@ var swiper3 = new Swiper(".course-container", {
       el: ".swiper-scrollbar",
       hide: false,
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
       375: {
           slidesPerView: 2,

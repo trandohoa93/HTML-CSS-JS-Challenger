@@ -830,3 +830,18 @@ footer {
 .btn--show {
     display: block;
 }
+
+.swiper-pagination {
+    width: 100%;
+    height: 5px;
+    display: flex;
+}
+
+.swiper-pagination-bullet { 
+    background-color: #f0eff6;
+    width: 20%;
+    height: 5px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #f79632;
+}
